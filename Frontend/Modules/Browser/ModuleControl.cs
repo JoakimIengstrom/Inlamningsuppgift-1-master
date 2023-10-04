@@ -44,6 +44,7 @@ namespace Frontend.Modules.Browser
             string pageContent;
 
             // TODO Vad gör denna try/catch-satsen och varför är det lägligt att skriva den här och inte innuti FetchSearch() metoden?
+            // There is merits to du this catch outside the FetchSearch(), one of the reasons is to control the HTTP-Request before the metodas as you cannot handle it inside the metod. 
             try
             {
                 pageContent = await _webFetcher.FetchSearch(SearchBar.Text);
