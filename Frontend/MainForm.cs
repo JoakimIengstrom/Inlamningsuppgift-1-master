@@ -17,6 +17,8 @@ namespace Frontend
     public partial class MainForm : Form
     {
         //TODO Vad är skillnaden på en vanlig metod och en konstruktor som 'MainForm'?
+        //Constructors are a special methods used to initiazing objects of a class. They are called at the instance when an object is created. 
+        //While a metod is used to preform action such as returns and calculation, adding and store information. 
         public MainForm()
         {
             InitializeComponent();
