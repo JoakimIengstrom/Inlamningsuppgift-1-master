@@ -17,6 +17,7 @@ namespace Frontend
         }
 
         //TODO Vad är 'this' just i denna koden?
+        //This is current instance of _menuManager from the switchToMainMenu is called. 
         public void SwitchToMainMenu()
         {
             SwitchToControl(new MainMenuControl(this));
