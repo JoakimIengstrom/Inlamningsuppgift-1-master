@@ -24,6 +24,7 @@ namespace Frontend.Modules.RandomButtonGame
         }
 
         //TODO Utifrån hur metoden 'PrepNewGame' nedan är skriven. Vilken knapp kommer att hamna på _buttons[10]?
+        // As this example starts on 0 and adds 1 to each instance of button, the 10th instance will give us the value of 9. 
         public void PrepNewGame(Control container)
         {
             Random random = new Random(236763541);
