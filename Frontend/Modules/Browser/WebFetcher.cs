@@ -11,6 +11,7 @@ namespace Frontend.Modules.Browser
     class WebFetcher
     {
         // TODO Vad används ett HttpClient objekt för i denna klassen?
+        // In just this case, it is used for an GetAsync metod....
         private static readonly HttpClient HttpClient = new HttpClient();
         private readonly ProgressBar _progressBar;
 
