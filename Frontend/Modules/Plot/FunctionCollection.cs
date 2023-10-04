@@ -11,6 +11,7 @@ namespace Frontend.Modules.Plot
     class FunctionCollection
     {
         // TODO Vad är det för två typer som '_functions' Dictionary:n kopplar samman här?
+        // The two types is a string and a metod that returns a double. 
         private readonly Dictionary<string, Func<double, double>> _functions;
 
         public FunctionCollection()
