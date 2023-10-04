@@ -16,6 +16,8 @@ namespace Frontend.Modules.RandomButtonGame
     public partial class ModuleControl : UserControl
     {
         //TODO Vad är skillnaden på DateTime och TimeSpan? Ge passande exempel på när man använder den ena gentemot den andra.
+        // TimeSpan is a set time, a duration of something. Exampl 10 seconds, 10 hours and so on. This can be used in a game, to set a timelimit. 
+        // DateTime, is an istance of time, example, when I last logged in. 
         private TimeSpan _timePassed;
 
         private readonly Game _game;
