@@ -10,6 +10,8 @@ namespace Frontend.Modules.Finder
     class FileSystemInspector
     {
         // TODO Vad innebär det att _currentDirectory är 'private'? Varför är inte TryGoDown också 'private'?
+        // That means that _currentDirectory is not to be used outside the Class FileSystemInspector. 
+        // TryGoDown is not private as its being used in ModuleControl.cs 
         private DirectoryInfo _currentDirectory;
 
         public FileSystemInspector()
