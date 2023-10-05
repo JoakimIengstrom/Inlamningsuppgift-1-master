@@ -7,7 +7,8 @@ using OxyPlot.Series;
 namespace Frontend.Modules.Plot
 {
     // BUG Funktionen "x^2" (x upphöjt till två) ska se ut som en uppvänd parabol (https://www.wolframalpha.com/input/?i=x%5E2).
-    // Kolla om det inte är någon miss som skett.
+    // In this there was a clue in the question and in the end it was just two math functions that was swapped, in this case I Would check the code in a math editor.
+    // By doing this I Soon seeing that two should be changed. math.pow and math.min
     public partial class ModuleControl : UserControl
     {
         private readonly FunctionCollection _funcCollection;
