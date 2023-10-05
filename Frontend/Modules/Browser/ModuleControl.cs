@@ -9,6 +9,7 @@ using System.Windows.Forms;
 namespace Frontend.Modules.Browser
 {
     // BUG Normalt sett ska de tio vanligaste orden i hemsidan dyka upp, men nu kommer inga ord. Bara sifforna 1 - 10
+    // In this care after stepping through it, the bug was found in the worldhandler, then most common, as they used <= >= wrong, and tried to check towards the lowest int there is. 
     /*
        Länken (http://www.textfiles.com/stories/3gables.txt) ska till exempel ge:
        1: the

@@ -33,7 +33,7 @@ namespace Frontend.Modules.Browser
                 var word = "";
                 foreach (var keyValue in wordCount)
                 {
-                    if (keyValue.Value <= highest)
+                    if (keyValue.Value >= highest)//This was the fault after stepping through it, it tried to check towards the wrong value. <=
                     {
                         word = keyValue.Key;
                         highest = keyValue.Value;
