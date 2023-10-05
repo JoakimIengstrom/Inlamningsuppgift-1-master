@@ -13,7 +13,7 @@ namespace Frontend.Modules.Finder
 {
     // BUG Programmet kraschar med ett undantag om man forstätter att gå upp en folder
     // Normalt sett ska inget hända om man fortsätter gå upp när man redan står i root foldern (t.ex. "C:\")
-    // 
+    // The program tried to continue its path up and when it reaches c:/ it tries to keep going up, the soultion was to add a if to check if parent != null. 
     public partial class ModuleControl : UserControl
     {
         private readonly FileSystemInspector _inspector;

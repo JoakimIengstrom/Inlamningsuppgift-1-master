@@ -19,9 +19,14 @@ namespace Frontend.Modules.Finder
             _currentDirectory = new DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
         }
 
-        public void TryGoUp()
+        public bool TryGoUp()
         {
-            _currentDirectory = _currentDirectory.Parent;
+            if (_currentDirectory.Parent != null)
+            {
+                _currentDirectory = _currentDirectory.Parent;
+                return true;
+            }
+            return false;
         }
 
         public void TryGoDown(string name)
