@@ -27,7 +27,7 @@ namespace Frontend.Modules.RandomButtonGame
         // As this example starts on 0 and adds 1 to each instance of button, the 10th instance will give us the value of 9. 
         public void PrepNewGame(Control container)
         {
-            Random random = new Random(236763541);
+            Random random = new Random();//Her is added a seed with 10 numbers that so its will always be the same. So by removing it it works. 
             for (int i = 0; i < _buttons.Length; i++)
             {
                 RandomButton newButton = new RandomButton(i + 1);

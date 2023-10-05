@@ -13,6 +13,7 @@ namespace Frontend.Modules.RandomButtonGame
 {
     // BUG Spelet ser ut att fungera som det ska, knapparna hamnar huller om buller.
     // Men när man spelar om spelet så hamnar alla knappar på samma ställe igen istället för att slumpas ut på nya platser.
+    // Its because the creator had given the random a seed that makes the seed be the same each time, by removing it its now random. 
     public partial class ModuleControl : UserControl
     {
         //TODO Vad är skillnaden på DateTime och TimeSpan? Ge passande exempel på när man använder den ena gentemot den andra.
